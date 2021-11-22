@@ -1,0 +1,108 @@
+---
+title: Outcome Prioritization Tool
+---
+
+<%= partial "navigation" %>
+<div class="container">
+  <div class="slider-container">
+  <div class="sliders">
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        <%= t("life_extension") %>
+      </h4>
+    </div>
+
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        Onafhankelijkheid bewaren
+      </h4>
+    </div>
+
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        Pijn verminderen
+      </h4>
+    </div>
+
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        Andere klachten verminderen
+      </h4>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    console.log( "ready!" );
+    const startValue = 0;
+
+
+    $('.slider-ui').noUiSlider({
+      start: startValue,
+      orientation: 'vertical',
+      direction: 'rtl',
+      range: {
+        'min': 0,
+        'max': 100
+      }
+    });
+  });
+</script>

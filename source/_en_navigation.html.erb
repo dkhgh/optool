@@ -1,27 +1,27 @@
 <header>
   <div class="wrap">
-    <a href="/">
+    <a href="/en">
         <%= image_tag "opt-logo.png", class: "logo", alt: "OPT" %>
     </a>
     <ul class="links">
       <li>
-        <%= link_to I18n.t(:the_opt), "/opt" %>
+        <%= link_to I18n.t(:the_opt), "en/opt" %>
       </li>
       <li>
-        <%= link_to "Video", "/video" %>
+        <%= link_to "Video", "en/video", locale: :en %>
         </a>
       </li>
       <li>
-        <%= link_to I18n.t(:instructions), "/instructions" %>
+        <%= link_to I18n.t(:instructions), "en/instructions" %>
       </li>
       <li>
-        <%= link_to I18n.t(:research), "/research" %>
+        <%= link_to I18n.t(:research), "en/research" %>
       </li>
       <li>
-        <a href="<%= url_for("/", locale: :nl) %>">
+        <a href="<%= url_for("../", locale: :nl) %>">
           <%= image_tag "nl.gif", class: "flag", alt: "Nederlands" %>
         </a>
-        <% link_to "/en" do %>
+        <% link_to "/" do %>
           <%= image_tag "en.gif", class: "flag", alt: "English" %>
         <% end %>
 

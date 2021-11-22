@@ -5,6 +5,8 @@ activate :autoprefixer do |prefix|
   prefix.browsers = "last 2 versions"
 end
 
+activate :directory_indexes
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
@@ -13,9 +15,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
-# activate :sprockets do |c|
-#   c.expose_middleman_helpers = true
-# end
+activate :i18n, :mount_at_root => :nl
+
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
