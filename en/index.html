@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title>Outcome Prioritization Tool</title>
+    <link href="/stylesheets/nouislider.css" rel="stylesheet" />
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="/javascripts/site.js"></script>
+    <script src="/javascripts/nouislider.js"></script>
+
+
+  </head>
+  <body>
+    <header>
+  <div class="wrap">
+    <a href="/en">
+        <img src="/images/opt-logo.png" class="logo" alt="OPT" />
+    </a>
+    <ul class="links">
+      <li>
+        <a href="/en/opt/">The OPT</a>
+      </li>
+      <li>
+        <a href="/en/video/">Video</a>
+        </a>
+      </li>
+      <li>
+        <a href="/en/instructions/">Instructions</a>
+      </li>
+      <li>
+        <a href="/en/research/">Research</a>
+      </li>
+      <li>
+        <a href="../">
+          <img src="/images/nl.gif" class="flag" alt="Nederlands" />
+        </a>
+<a href="/en/">          <img src="/images/en.gif" class="flag" alt="English" />
+</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+
+<div class="container">
+  <div class="slider-container">
+  <div class="sliders">
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        Keeping you alive
+      </h4>
+    </div>
+
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        Maintaining independence
+      </h4>
+    </div>
+
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        Reducing pain
+      </h4>
+    </div>
+
+    <div class="slider">
+      <div class="slider-ui"></div>
+      <div class="markers">
+        <span></span>
+        <span>10</span>
+        <span>20</span>
+        <span>30</span>
+        <span>40</span>
+        <span>50</span>
+        <span>60</span>
+        <span>70</span>
+        <span>80</span>
+        <span>90</span>
+        <span>100</span>
+      </div>
+      <h4>
+        Reducing other symptoms
+      </h4>
+    </div>
+  </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function() {
+    console.log( "ready!" );
+    const startValue = 0;
+
+
+    $('.slider-ui').noUiSlider({
+      start: startValue,
+      orientation: 'vertical',
+      direction: 'rtl',
+      range: {
+        'min': 0,
+        'max': 100
+      }
+    });
+  });
+</script>
+
+  </body>
+</html>
